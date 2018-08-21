@@ -50,7 +50,8 @@ public class TwoSum {
 
     /**
      * 结合HashMap一次遍历实现
-     * 说明：只需要一次遍历，时间复杂度：O(n)
+     * 说明：这不是一种新的解法，但是相对与上一种实现，速度上有了巨大的提升
+     *       从中我们可以看出for循环中定义变量的开销是非常大的
      */
     private static int[] solution3(int [] nums, int target){
         HashMap<Integer, Integer> temp = new HashMap<Integer, Integer>();
