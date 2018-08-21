@@ -5,7 +5,6 @@ import java.util.HashMap;
 /**
  * 题目：两数之和
  * 地址：https://leetcode-cn.com/problems/two-sum/description/
- * Created by YuBing on 2018/8/21.
  */
 public class TwoSum {
 
@@ -15,7 +14,6 @@ public class TwoSum {
      */
     private static int[] solution1(int[] nums, int target){
         int [] result = new int[2];
-
         for(int i = 0; i < nums.length - 1; i++){
             for(int j = i + 1; j < nums.length; j++){
                 if(nums[i] + nums[j] == target){
@@ -40,8 +38,7 @@ public class TwoSum {
             Integer p = temp.get(t);
             if(p != null){
                 return new int[]{p, i};
-            }
-            else{
+            } else {
                 temp.put(nums[i], i);
             }
         }
@@ -57,13 +54,12 @@ public class TwoSum {
         HashMap<Integer, Integer> temp = new HashMap<Integer, Integer>();
         int t;
         Integer p;
-        for(int i = 0; i < nums.length; i++){
+        for (int i = 0; i < nums.length; i++) {
             t = target - nums[i];
             p = temp.get(t);
-            if(p != null){
+            if (p != null) {
                 return new int[]{p, i};
-            }
-            else{
+            } else {
                 temp.put(nums[i], i);
             }
         }
