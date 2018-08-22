@@ -2,7 +2,7 @@ package com.leetcode.problem;
 
 /**
  * 题目：两数相加
- * 地址：https://leetcode-cn.com/submissions/detail/5882080/
+ * 地址：https://leetcode-cn.com/problems/add-two-numbers/description/
  */
 public class AddTwoNumbers {
     private static class ListNode {
