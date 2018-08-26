@@ -5,17 +5,26 @@ package com.leetcode.problem;
  * 地址：https://leetcode-cn.com/problems/add-two-numbers/description/
  */
 public class AddTwoNumbers {
-    private static class ListNode {
+    public static class ListNode {
         int val;
         ListNode next;
         ListNode(int x) { val = x; }
+
+        @Override
+        public boolean equals(Object obj) {
+            if (obj == null || !(obj instanceof ListNode)) {
+                return false;
+            }
+            ListNode l = (ListNode) obj;
+            return this.val == l.val && (this.next == null && l.next == null || this.next != null && l.next != null && this.next.equals(l.next));
+        }
     }
 
     /**
      * 普通遍历实现
      * 说明：时间复杂度O(n)
      */
-    private static ListNode solution1(ListNode l1, ListNode l2){
+    public ListNode solution1(ListNode l1, ListNode l2){
         ListNode l3 = l1;
         ListNode l4 = l2;
         ListNode root;
@@ -71,7 +80,7 @@ public class AddTwoNumbers {
      * 循环遍历实现，会提前结束遍历
      * 说明：时间复杂度O(n)
      */
-    private static ListNode solution2(ListNode l1, ListNode l2){
+    public ListNode solution2(ListNode l1, ListNode l2){
         ListNode root = l1;
         while (true){
             l1.val += l2.val;
@@ -100,24 +109,5 @@ public class AddTwoNumbers {
             l1 = l1.next;
         }
         return root;
-    }
-
-    private static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        // return solution1(l1, l2);
-        return solution2(l1, l2);
-    }
-
-    public static void main(String [] args){
-        ListNode l1 = new ListNode(2);
-        l1.next = new ListNode(4);
-        l1.next.next = new ListNode(3);
-
-        ListNode l2 = new ListNode(5);
-        l2.next = new ListNode(6);
-        l2.next.next = new ListNode(4);
-
-        ListNode l3 = addTwoNumbers(l1, l2);
-
-        System.out.printf("%d -> %d -> %d", l3.val, l3.next.val, l3.next.next.val);
     }
 }

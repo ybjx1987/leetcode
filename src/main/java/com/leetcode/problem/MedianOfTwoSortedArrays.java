@@ -1,6 +1,8 @@
 package com.leetcode.problem;
 
 /**
+ * 题目：两个排序数组的中位数
+ * 地址：https://leetcode-cn.com/problems/median-of-two-sorted-arrays/description/
  * Created by YuBing on 2018/8/22.
  */
 public class MedianOfTwoSortedArrays {
@@ -8,7 +10,7 @@ public class MedianOfTwoSortedArrays {
     /**
      * 通过二分查找中位数
      */
-    private static double solution1(int [] nums1, int [] nums2){
+    public double solution1(int [] nums1, int [] nums2){
 
         if(nums1.length > nums2.length){
             int [] temp = nums1;
@@ -55,15 +57,5 @@ public class MedianOfTwoSortedArrays {
             }
         }
         return 0.0;
-    }
-
-
-    public static void main(String [] args){
-        System.out.println(solution1(new int[]{1, 3}, new int []{2}));
-        System.out.println(solution1(new int[]{1, 2}, new int []{3,4}));
-        System.out.println(solution1(new int[]{}, new int []{1}));
-        System.out.println(solution1(new int[]{}, new int []{1,2}));
-        System.out.println(solution1(new int[]{3}, new int []{1,2,4}));
-        System.out.println(solution1(new int[]{3,7}, new int []{1,2,4}));
     }
 }
