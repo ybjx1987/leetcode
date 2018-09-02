@@ -205,6 +205,7 @@ public class BaseSolution {
     }
 
     public static void main(String [] args) throws IOException {
+        Thread.currentThread().setPriority(10);
         run();
     }
 }

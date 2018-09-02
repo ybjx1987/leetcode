@@ -42,25 +42,4 @@ public class TwoSum extends BaseSolution{
         }
         return new int[]{0,0};
     }
-
-    /**
-     * 结合HashMap一次遍历实现
-     * 说明：这不是一种新的解法，但是相对与上一种实现，速度上有了巨大的提升
-     *       从中我们可以看出for循环中定义变量的开销是非常大的
-     */
-    public static int[] solution3(int [] nums, int target){
-        HashMap<Integer, Integer> temp = new HashMap<Integer, Integer>();
-        int t;
-        Integer p;
-        for (int i = 0; i < nums.length; i++) {
-            t = target - nums[i];
-            p = temp.get(t);
-            if (p != null) {
-                return new int[]{p, i};
-            } else {
-                temp.put(nums[i], i);
-            }
-        }
-        return new int[]{0,0};
-    }
 }

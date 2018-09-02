@@ -25,6 +25,9 @@
         <module>roman-to-integer</module>
         <module>string-to-integer</module>
         <module>three-sum</module>
+        <module>three-sum-closest</module>
+        <module>letter-combinations-of-a-phone-number</module>
+        <module>four-sum</module>
     </modules>
 
     <dependencies>

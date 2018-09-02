@@ -1,0 +1,14 @@
+[
+  {
+    "parameter": ["23"],
+    "result": ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]
+  },
+  {
+    "parameter": ["3"],
+    "result": ["d", "e", "f"]
+  },
+  {
+    "parameter": ["7"],
+    "result": ["p", "q", "r", "s"]
+  }
+]
