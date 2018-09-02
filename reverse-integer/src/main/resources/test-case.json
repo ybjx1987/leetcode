@@ -1,0 +1,34 @@
+[
+  {
+    "parameter":[1],
+    "result": 1
+  },
+  {
+    "parameter":[123],
+    "result": 321
+  },
+  {
+    "parameter":[120],
+    "result": 21
+  },
+  {
+    "parameter":[-120],
+    "result": -21
+  },
+  {
+    "parameter":[1534236469],
+    "result": 0
+  },
+  {
+    "parameter":[463847412],
+    "result": 214748364
+  },
+  {
+    "parameter":[563847412],
+    "result": 214748365
+  },
+  {
+    "parameter":[-2147483648],
+    "result": 0
+  }
+]

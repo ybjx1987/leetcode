@@ -1,0 +1,18 @@
+[
+  {
+    "parameter":[121],
+    "result": true
+  },
+  {
+    "parameter":[1],
+    "result": true
+  },
+  {
+    "parameter":[-10],
+    "result": false
+  },
+  {
+    "parameter":[123],
+    "result": false
+  }
+]

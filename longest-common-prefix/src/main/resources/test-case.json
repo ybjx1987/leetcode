@@ -1,0 +1,10 @@
+[
+  {
+    "parameter":[["flower","flow","flight"]],
+    "result": "fl"
+  },
+  {
+    "parameter":[["dog","racecar","car"]],
+    "result": ""
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "parameter":["babad"],
+    "result": "bab"
+  },
+  {
+    "parameter":["cbbd"],
+    "result": "bb"
+  },
+  {
+    "parameter":["b"],
+    "result": "b"
+  },
+  {
+    "parameter":["bb"],
+    "result": "bb"
+  },
+  {
+    "parameter":["abcdbbdcdd"],
+    "result": "cdbbdc"
+  }
+]

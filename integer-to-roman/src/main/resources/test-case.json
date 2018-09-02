@@ -1,0 +1,22 @@
+[
+  {
+    "parameter":[3],
+    "result": "III"
+  },
+  {
+    "parameter":[4],
+    "result": "IV"
+  },
+  {
+    "parameter":[9],
+    "result": "IX"
+  },
+  {
+    "parameter":[58],
+    "result": "LVIII"
+  },
+  {
+    "parameter":[1994],
+    "result": "MCMXCIV"
+  }
+]

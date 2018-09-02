@@ -1,0 +1,26 @@
+[
+  {
+    "parameter":["PAYPALISHIRING",3],
+    "result": "PAHNAPLSIIGYIR"
+  },
+  {
+    "parameter":["PAYPALISHIRING",4],
+    "result": "PINALSIGYAHRPI"
+  },
+  {
+    "parameter":["",4],
+    "result": ""
+  },
+  {
+    "parameter":["A",1],
+    "result": "A"
+  },
+  {
+    "parameter":["AB",1],
+    "result": "AB"
+  },
+  {
+    "parameter":["ABCDE",2],
+    "result": "ACEBD"
+  }
+]

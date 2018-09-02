@@ -1,0 +1,18 @@
+[
+  {
+    "parameter":["abcabcbb"],
+    "result": 3
+  },
+  {
+    "parameter":["bbbbb"],
+    "result": 1
+  },
+  {
+    "parameter":["pwwkew"],
+    "result": 3
+  },
+  {
+    "parameter":[" "],
+    "result": 1
+  }
+]

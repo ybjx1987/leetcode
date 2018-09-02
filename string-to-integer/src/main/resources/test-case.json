@@ -1,0 +1,26 @@
+[
+  {
+    "parameter":["42"],
+    "result": 42
+  },
+  {
+    "parameter":["   -42"],
+    "result": -42
+  },
+  {
+    "parameter":["4193 with words"],
+    "result": 4193
+  },
+  {
+    "parameter":["words and 987"],
+    "result": 0
+  },
+  {
+    "parameter":["-91283472332"],
+    "result": -2147483648
+  },
+  {
+    "parameter":["-2147483649"],
+    "result": -2147483648
+  }
+]

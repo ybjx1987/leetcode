@@ -1,0 +1,38 @@
+[
+  {
+    "parameter":["b", "aaa"],
+    "result": false
+  },
+  {
+    "parameter":["aa", "*c"],
+    "result": false
+  },
+  {
+    "parameter":["aa", "a"],
+    "result": false
+  },
+  {
+    "parameter":["ab", ".*"],
+    "result": true
+  },
+  {
+    "parameter":["aab", "a*b*c*"],
+    "result": true
+  },
+  {
+    "parameter":["mississippi", "mis*is*p*."],
+    "result": false
+  },
+  {
+    "parameter":["aab", "c*a*b"],
+    "result": true
+  },
+  {
+    "parameter":["a", ""],
+    "result": false
+  },
+  {
+    "parameter":["a", "ab*"],
+    "result": true
+  }
+]
