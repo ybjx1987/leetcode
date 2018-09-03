@@ -1,0 +1,26 @@
+[
+  {
+    "parameter":["()"],
+    "result": true
+  },
+  {
+    "parameter": ["()[]{}"],
+    "result": true
+  },
+  {
+    "parameter":["(]"],
+    "result": false
+  },
+  {
+    "parameter":["([)]"],
+    "result":false
+  },
+  {
+    "parameter":["{[]}"],
+    "result": true
+  },
+  {
+    "parameter":["]"],
+    "result": false
+  }
+]
