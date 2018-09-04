@@ -1,5 +1,6 @@
 package com.ybjx.leetcode;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 /**
@@ -15,9 +16,7 @@ public class TwoSum extends BaseSolution{
         for(int i = 0; i < nums.length - 1; i++){
             for(int j = i + 1; j < nums.length; j++){
                 if(nums[i] + nums[j] == target){
-                    result[0] = i;
-                    result[1] = j;
-                    return result;
+                    return new int[]{i, j};
                 }
             }
         }
@@ -29,7 +28,7 @@ public class TwoSum extends BaseSolution{
      * 结合HashMap一次遍历实现
      * 说明：只需要一次遍历，时间复杂度：O(n)
      */
-    public static int[] solution2(int [] nums, int target){
+    public static int[] solution3(int [] nums, int target){
         HashMap<Integer, Integer> temp = new HashMap<Integer, Integer>();
         for(int i = 0; i < nums.length; i++){
             int t = target - nums[i];
@@ -38,6 +37,21 @@ public class TwoSum extends BaseSolution{
                 return new int[]{p, i};
             } else {
                 temp.put(nums[i], i);
+            }
+        }
+        return new int[]{0,0};
+    }
+
+    public static int[] solution2(int [] nums, int target){
+        HashMap<Integer, Integer> temp = new HashMap<Integer, Integer>();
+        for(int i = 0; i < nums.length; i++){
+            temp.put(nums[i], i);
+        }
+        for(int i = 0; i < nums.length; i++){
+            int t = target - nums[i];
+            Integer p = temp.get(t);
+            if(p != null && p != i){
+                return new int[]{i, p};
             }
         }
         return new int[]{0,0};
