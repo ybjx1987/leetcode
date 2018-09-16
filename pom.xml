@@ -30,6 +30,9 @@
         <module>four-sum</module>
         <module>remove-nth-node-from-end-of-list</module>
         <module>valid-parentheses</module>
+        <module>merge-two-sorted-lists</module>
+        <module>generate-parentheses</module>
+        <module>two-sum-2</module>
     </modules>
 
     <dependencies>
